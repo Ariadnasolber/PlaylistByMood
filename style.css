@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap");
+
+html, body {   
+    background-color: rgb(13, 13, 13);
+    backdrop-filter: blur(100px);
+    font-family: "Poppins", sans-serif;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 200; 
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 200;
+    font-size: larger; 
+}
+
+a {
+    color: #ebf4ff;
+}
+
+a:hover {
+    color: #e5acff;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select {
+    color: white;
+    background-color: rgba(26, 26, 26, 0.427);
+    backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.background {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle, #29c04a, #131313); 
+    z-index: -1; 
+    animation: fadeInFadeOut 5s infinite;
+}
+
+@keyframes fadeInFadeOut {
+    0%,
+    100% {
+        /*starting y ending point*/
+        opacity: 0.5;
+    }
+    50% {
+        /*middle point de la animacion*/
+        opacity: 1;
+    }
+}
